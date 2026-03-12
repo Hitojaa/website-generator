@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Exclure les pages de système / pas utiles pour le SEO
+Disallow: /api/
+Disallow: /merci
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+
+# Sitemap
+Sitemap: https://www.dupont-plomberie.fr/sitemap.xml
