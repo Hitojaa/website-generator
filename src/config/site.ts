@@ -8,43 +8,49 @@
 export const siteConfig = {
   // ─── Identité de l'entreprise ─────────────────────────────────────────────
   company: {
-    name: 'Dupont Plomberie',
-    shortName: 'Dupont Plomberie',
-    slogan: 'Votre plombier de confiance à Nice',
-    siret: '123 456 789 00012',
-    rcs: 'Nice',
+    name: 'HD Plomberie',
+    shortName: 'HD Plomberie',
+    slogan: 'Votre plombier de confiance à Cagnes-sur-Mer',
+    siret: '',
+    rcs: 'Antibes',
   },
 
   // ─── Coordonnées ──────────────────────────────────────────────────────────
   contact: {
-    phone: '04 93 00 12 34',
-    phoneRaw: '+33493001234',          // Format international pour les liens tel:
-    whatsapp: '+33612345678',          // Laisser vide '' pour désactiver
-    email: 'contact@dupont-plomberie.fr',
+    phone: '06 62 48 46 85',
+    phoneRaw: '+33662484685',          // Format international pour les liens tel:
+    whatsapp: '+33662484685',          // Laisser vide '' pour désactiver
+    email: 'contact@hd-plomberie.fr',
     address: {
-      street: '12 rue de la Paix',
-      city: 'Nice',
-      postalCode: '06000',
+      street: '2 Av. Cyrille Besset',
+      city: 'Cagnes-sur-Mer',
+      postalCode: '06800',
       country: 'France',
     },
   },
 
   // ─── Horaires ─────────────────────────────────────────────────────────────
   hours: {
-    weekdays: 'Lundi – Vendredi : 8h00 – 19h00',
-    saturday: 'Samedi : 9h00 – 17h00',
-    sunday: 'Dimanche : Fermé (urgences 24h/24)',
-    emergency: 'Urgences disponibles 24h/24 – 7j/7',
-    emergencyNote: 'Pour toute urgence en dehors des heures d\'ouverture, appelez directement.',
+    weekdays: 'Lundi – Vendredi : Ouvert 24h/24',
+    saturday: 'Samedi : Ouvert 24h/24',
+    sunday: 'Dimanche : Ouvert 24h/24',
+    emergency: 'Disponible 24h/24 – 7j/7',
+    emergencyNote: 'Nous sommes disponibles à toute heure, 7 jours sur 7, pour vos urgences plomberie.',
   },
 
   // ─── Zone géographique principale ─────────────────────────────────────────
-  mainCity: 'Nice',
+  mainCity: 'Cagnes-sur-Mer',
   mainArea: 'Alpes-Maritimes',
   department: '06',
 
   // ─── Zones d'intervention ─────────────────────────────────────────────────
   zones: [
+    {
+      name: 'Cagnes-sur-Mer',
+      slug: 'cagnes-sur-mer',
+      description:
+        'Basés à Cagnes-sur-Mer, nous intervenons dans toute la ville et ses quartiers : Haut-de-Cagnes, Cros-de-Cagnes, Val-de-Cagnes. Dépannage rapide 24h/24.',
+    },
     {
       name: 'Nice',
       slug: 'nice',
@@ -58,28 +64,22 @@ export const siteConfig = {
         'Plombier à Antibes et Juan-les-Pins. Interventions rapides pour dépannage, fuites, débouchage et installation sanitaire dans tout Antibes.',
     },
     {
+      name: 'Villeneuve-Loubet',
+      slug: 'villeneuve-loubet',
+      description:
+        'Interventions à Villeneuve-Loubet et Villeneuve-Loubet-Plage. Dépannage et travaux de plomberie pour particuliers et copropriétés.',
+    },
+    {
       name: 'Cannes',
       slug: 'cannes',
       description:
         'Dépannage plomberie à Cannes et La Bocca. Artisan disponible pour urgences, réparations et travaux dans toute la ville de Cannes.',
     },
     {
-      name: 'Cagnes-sur-Mer',
-      slug: 'cagnes-sur-mer',
-      description:
-        'Plombier à Cagnes-sur-Mer, Villeneuve-Loubet et alentours. Interventions professionnelles et réactives pour particuliers et professionnels.',
-    },
-    {
       name: 'Sophia Antipolis',
       slug: 'sophia-antipolis',
       description:
         'Interventions à Sophia Antipolis et Valbonne. Prise en charge rapide pour entreprises et résidences dans le secteur technopolitain.',
-    },
-    {
-      name: 'Menton',
-      slug: 'menton',
-      description:
-        'Plombier à Menton et Roquebrune-Cap-Martin. Dépannage et travaux de plomberie pour particuliers et copropriétés sur tout Menton.',
     },
   ],
 
@@ -134,7 +134,7 @@ export const siteConfig = {
     {
       id: 1,
       name: 'Marie L.',
-      city: 'Nice',
+      city: 'Cagnes-sur-Mer',
       rating: 5,
       text: 'Intervention ultra rapide suite à une fuite d\'eau importante. Arrivée en moins d\'une heure, réparation propre et soignée. Tarif honnête et devis respecté. Je recommande vivement !',
       date: '2024-11-15',
@@ -142,15 +142,15 @@ export const siteConfig = {
     {
       id: 2,
       name: 'Thierry M.',
-      city: 'Antibes',
+      city: 'Nice',
       rating: 5,
-      text: 'Mon chauffe-eau a rendu l\'âme un vendredi soir. Dupont Plomberie a répondu immédiatement et installé un nouveau modèle le lendemain matin. Professionnel, ponctuel et très soigné.',
+      text: 'Mon chauffe-eau a rendu l\'âme un vendredi soir. HD Plomberie a répondu immédiatement et installé un nouveau modèle le lendemain matin. Professionnel, ponctuel et très soigné.',
       date: '2024-10-28',
     },
     {
       id: 3,
       name: 'Sophie R.',
-      city: 'Cannes',
+      city: 'Antibes',
       rating: 5,
       text: 'Débouchage de canalisation réalisé en moins de 30 minutes. Artisan très professionnel, travail impeccable, aucun dégât. Je garde les coordonnées précieusement !',
       date: '2024-09-12',
@@ -158,7 +158,7 @@ export const siteConfig = {
     {
       id: 4,
       name: 'Jean-Pierre B.',
-      city: 'Nice',
+      city: 'Cagnes-sur-Mer',
       rating: 5,
       text: 'Rénovation complète de notre salle de bain réalisée en 5 jours. Résultat magnifique, tout a été fait dans les délais et le budget prévu. Vraiment très satisfait.',
       date: '2024-08-03',
@@ -166,30 +166,36 @@ export const siteConfig = {
     {
       id: 5,
       name: 'Isabelle D.',
-      city: 'Cagnes-sur-Mer',
+      city: 'Villeneuve-Loubet',
       rating: 5,
       text: 'Recherche de fuite invisible depuis plusieurs semaines. Détection précise, réparation rapide et sans destruction excessive. Enfin un professionnel sérieux et compétent.',
       date: '2024-07-19',
     },
   ],
 
+  // ─── Note Google ──────────────────────────────────────────────────────────
+  googleRating: {
+    score: 4.8,
+    count: 38,
+  },
+
   // ─── Chiffres clés ────────────────────────────────────────────────────────
   stats: {
-    yearsExperience: 15,
-    clientsServed: 1200,
+    yearsExperience: 10,
+    clientsServed: 500,
     interventionTime: '1h',
     satisfaction: 98,
   },
 
   // ─── SEO ──────────────────────────────────────────────────────────────────
   seo: {
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.dupont-plomberie.fr',
-    defaultTitle: 'Dupont Plomberie – Plombier à Nice | Dépannage rapide et devis gratuit',
-    titleTemplate: '%s | Dupont Plomberie – Plombier Nice',
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.hd-plomberie.fr',
+    defaultTitle: 'HD Plomberie – Plombier à Cagnes-sur-Mer | Disponible 24h/24 7j/7',
+    titleTemplate: '%s | HD Plomberie – Plombier Cagnes-sur-Mer',
     defaultDescription:
-      'Plombier professionnel à Nice et dans les Alpes-Maritimes. Dépannage urgence 24h/24, recherche de fuite, débouchage, chauffe-eau, rénovation salle de bain. Devis gratuit.',
+      'Plombier professionnel à Cagnes-sur-Mer et dans les Alpes-Maritimes. Disponible 24h/24 7j/7 pour dépannage urgence, recherche de fuite, débouchage, chauffe-eau, rénovation salle de bain. Devis gratuit.',
     keywords:
-      'plombier Nice, dépannage plomberie Nice, fuite eau Nice, débouchage Nice, chauffe-eau Nice, plombier urgence Nice',
+      'plombier Cagnes-sur-Mer, dépannage plomberie Cagnes-sur-Mer, fuite eau Cagnes-sur-Mer, débouchage Cagnes-sur-Mer, chauffe-eau Cagnes-sur-Mer, plombier urgence Nice, plombier 06800',
     ogImage: '/og-image.jpg',
     twitterHandle: '',
     locale: 'fr_FR',

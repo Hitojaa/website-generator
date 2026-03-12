@@ -20,9 +20,9 @@ export function Testimonials() {
         {/* Note globale */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 bg-brand-50 border border-brand-100 rounded-2xl p-6 mb-10 max-w-lg mx-auto">
           <div className="text-center">
-            <p className="text-5xl font-bold text-brand-900">5.0</p>
-            <StarRating rating={5} />
-            <p className="text-sm text-gray-500 mt-1">{siteConfig.testimonials.length} avis vérifiés</p>
+            <p className="text-5xl font-bold text-brand-900">{siteConfig.googleRating.score.toFixed(1)}</p>
+            <StarRating rating={siteConfig.googleRating.score} />
+            <p className="text-sm text-gray-500 mt-1">{siteConfig.googleRating.count} avis Google</p>
           </div>
           <div className="h-px sm:h-12 w-full sm:w-px bg-brand-200" role="separator" />
           <div className="text-center sm:text-left">

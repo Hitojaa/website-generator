@@ -57,8 +57,8 @@ export function LocalBusinessSchema() {
     },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5',
-      reviewCount: siteConfig.testimonials.length,
+      ratingValue: String(siteConfig.googleRating.score),
+      reviewCount: siteConfig.googleRating.count,
       bestRating: '5',
       worstRating: '1',
     },
